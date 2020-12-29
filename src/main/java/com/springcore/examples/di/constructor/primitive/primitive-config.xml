@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- Using constructor-arg tag and value tag -->
+	<bean class="com.springcore.examples.di.constructor.primitive.Person"
+		name="p1">
+		<constructor-arg>
+			<value>101</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>Shankar Ghimire</value>
+		</constructor-arg>
+		<constructor-arg>
+			<value>41-Bernard Ave., Brampton, ON</value>
+		</constructor-arg>
+	</bean>
+
+
+	<!-- Using constructor-arg tag and value attribute -->
+	<bean class="com.springcore.examples.di.constructor.primitive.Person"
+		name="p2">
+		<constructor-arg value="102"/>
+		<constructor-arg value="Ram Nepal"/>
+		<constructor-arg value="14-Ratnanagar, Chitwan, Nepal"/>
+	</bean>
+
+	<!-- Using 'c' Schema -->
+	<bean class="com.springcore.examples.di.constructor.primitive.Person"
+		name="p3" c:personId="103" c:name="Harry" c:address="Toronto, ON, Canada"/>
+	
+
+
+
+
+</beans>
