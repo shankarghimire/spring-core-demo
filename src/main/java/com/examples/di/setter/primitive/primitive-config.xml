@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- Using property and value tag -->
+
+	<bean class="com.examples.di.setter.primitive.Student"
+		name="student1">
+		<property name="studentId">
+			<value>123</value>
+		</property>
+		<property name="studentName">
+			<value>Shankar Ghimire</value>
+		</property>
+		<property name="studentAddress">
+			<value>41-Bernard Ave, Brampton</value>
+		</property>
+	</bean>
+
+
+	<!-- Using property and value attribute -->
+	<bean class="com.examples.di.setter.primitive.Student"
+		name="student2">
+		<property name="studentId" value="124" />
+		<property name="studentName" value="Ram Nepal" />
+		<property name="studentAddress" value="14-Ratnanagar, Chitwan, Nepal" />
+	</bean>
+
+	<!-- Using 'p' Schema -->
+	<bean class="com.examples.di.setter.primitive.Student"
+		name="student3" p:studentId="125" p:studentName="Harry"
+		p:studentAddress="Toronto, Canada"></bean>
+
+
+
+</beans>
