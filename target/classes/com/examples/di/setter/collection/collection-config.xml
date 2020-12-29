@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<bean class="com.examples.di.setter.collection.Employee" name="emp1">
+		<property name="name" value="Shankar"/>
+		<property name="phones">
+			<list>
+				<value>123-456-1111</value>
+				<value>123-456-2222</value>
+				<value>123-456-3333</value>
+				<null/>
+				<null/>	
+			</list>
+		</property>
+		
+		<property name="address">
+			<set>
+				<value>Brampton</value>
+				<value>Toronto</value>
+				<value>Milton</value>
+			</set>			
+		</property>
+		
+		<property name="courses">
+			<map>
+				<entry key="Java" value="2-Months"/>
+				<entry key="Python" value="5-Months"/>
+			</map>
+		</property>
+		
+		<property name="property">
+			<props>
+				<prop key="userName">Shankar</prop>
+				<prop key="password">123</prop>
+				<prop key="email">shankar@info.com</prop>
+			</props>
+		
+		</property>
+	</bean>
+	
+</beans>
