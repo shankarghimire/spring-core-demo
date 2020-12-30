@@ -1,14 +1,12 @@
-package com.springcore.examples.withoutioc;
+package com.springcore.examples.withclass.noioc;
 
-public class Rogers implements Sim {
+public class Rogers {
 
-	@Override
 	public void calling() {
 		System.out.println("Calling from Rogers sim...");
 
 	}
 
-	@Override
 	public void data() {
 		System.out.println("Data browsing from Rogers sim...");
 

@@ -3,11 +3,8 @@ package com.springcore.examples.javaconfig.beanannotation;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 
-@Component
 public class Student {
 	@Value("Shankar Ghimire")
 	private String studentName;

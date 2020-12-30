@@ -12,11 +12,14 @@ public class TestApp {
 		
 		System.out.println("Context loaded...");
 		
-		Student std1 = applicationContext.getBean("student",Student.class);
+		Student std1 = applicationContext.getBean("getStudent",Student.class);
 		System.out.println(std1);
 		
 		Employee emp1 = applicationContext.getBean("employee", Employee.class);
 		System.out.println(emp1);
+		
+		Employee emp2 = applicationContext.getBean("tempEmployee", Employee.class);
+		System.out.println(emp2);
 	}
 
 }

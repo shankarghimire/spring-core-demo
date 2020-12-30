@@ -1,4 +1,4 @@
-package com.springcore.examples.withoutioc;
+package com.springcore.examples.withinterface.noioc;
 
 public class Fido implements Sim {
 

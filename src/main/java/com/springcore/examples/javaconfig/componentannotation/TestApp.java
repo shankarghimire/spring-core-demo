@@ -1,4 +1,4 @@
-package com.springcore.examples.javaconfig.componentscan;
+package com.springcore.examples.javaconfig.componentannotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,7 +12,7 @@ public class TestApp {
 		
 		System.out.println("Context loaded...");
 		
-		Student std1 = applicationContext.getBean("getStudent",Student.class);
+		Student std1 = applicationContext.getBean("student",Student.class);
 		System.out.println(std1);
 		
 		Employee emp1 = applicationContext.getBean("employee", Employee.class);
