@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd 
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- By using byName -->
+<!-- 
+<bean class="com.springcore.examples.autowire.xml.Address" name="address">
+	<property name="street" value="41-Bernard Ave."/>
+		<property name="city" value="Brampton"/>
+</bean>
+
+<bean class="com.springcore.examples.autowire.xml.Employee" name="e1" autowire="byName"/>
+ -->	
+	<!-- By using byType -->
+	<!--  
+<bean class="com.springcore.examples.autowire.xml.Address" name="address1">
+	<property name="street" value="14-Aadarsha Tole"/>
+		<property name="city" value="Chitwan"/>
+</bean>
+
+<bean class="com.springcore.examples.autowire.xml.Employee" name="e1" autowire="byType"/>
+	
+	-->
+	<!-- By using constructor -->
+	 
+<bean class="com.springcore.examples.autowire.xml.Address" name="address1">
+	<property name="street" value="14-Aadarsha Tole"/>
+		<property name="city" value="Chitwan"/>
+</bean>
+
+<bean class="com.springcore.examples.autowire.xml.Employee" name="e1" autowire="constructor"/>
+	
+	
+
+
+</beans>
